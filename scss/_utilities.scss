@@ -1,0 +1,136 @@
+.container {
+  max-width: $website-width;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+// Buttons
+%btn-shared {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 1px $pink-color solid;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.17);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+// Backgrounds
+.bg {
+  &-main {
+    background: $main-color;
+    color: set-text-color($main-color);
+  }
+  &-dark {
+    background: $light-color;
+    color: set-text-color($main-color);
+  }
+}
+
+//Text color
+.tc {
+  &-main {
+    color: $bluish-color;
+  }
+}
+
+.btn {
+  &-main {
+    @extend %btn-shared;
+    color: #fff;
+    font-family: "Dosis", sans-serif;
+    border-radius: 10rem;
+  }
+
+  &-light {
+    @extend %btn-shared;
+    color: #333;
+    background-color: $light-color;
+  }
+
+  &-dark {
+    @extend %btn-shared;
+    color: #333;
+    background-color: $dark-color;
+  }
+}
+
+button[class^="btn-"]:hover,
+a[class^="btn-"]:hover,
+input[class^="btn-"]:hover {
+  background-color: $pink-color;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+// Padding
+.py {
+  &-1 {
+    padding: 1rem 0;
+  }
+  &-2 {
+    padding: 2rem 0;
+  }
+  &-3 {
+    padding: 3rem 0;
+  }
+  &-4 {
+    padding: 4rem 0;
+  }
+}
+
+// Margin
+.my {
+  &-1 {
+    margin: 1rem 0;
+  }
+  &-2 {
+    margin: 2rem 0;
+  }
+  &-3 {
+    margin: 3rem 0;
+  }
+  &-4 {
+    margin: 4rem 0;
+  }
+}
+
+.section {
+  &-title-main {
+    display: block;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 3rem;
+  }
+
+  &-title-1 {
+    border-bottom: 1px solid;
+  }
+}
+
+.bottom-line {
+  height: 2px;
+  width: 40rem;
+  background: $pink-color;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+.circle {
+  position: relative;
+  border-radius: 50%;
+  background: $bluish-color;
+  width: 8rem;
+  height: 8rem;
+  text-align: center;
+  font-size: 0.8rem;
+}
