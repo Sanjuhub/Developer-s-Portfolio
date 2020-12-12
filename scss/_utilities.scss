@@ -134,3 +134,14 @@ input[class^="btn-"]:hover {
   text-align: center;
   font-size: 0.8rem;
 }
+
+.bar {
+  height: 28px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
